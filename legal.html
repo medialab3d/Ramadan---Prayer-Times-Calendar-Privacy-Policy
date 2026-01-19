@@ -13,192 +13,249 @@
         }
 
         body {
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
-            line-height: 1.6;
-            color: #333;
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            min-height: 100vh;
-            padding: 20px;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+            line-height: 1.8;
+            color: #1a1a1a;
+            background-color: #f5f5f5;
+            padding: 0;
         }
 
         .container {
-            max-width: 900px;
+            max-width: 800px;
             margin: 0 auto;
-            background: white;
-            border-radius: 16px;
-            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
-            overflow: hidden;
+            background: #ffffff;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
         }
 
         .header {
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            color: white;
-            padding: 40px 30px;
+            background-color: #1e88e5;
+            color: #ffffff;
+            padding: 24px 20px;
             text-align: center;
+            border-bottom: 4px solid #1565c0;
         }
 
         .header h1 {
-            font-size: 2em;
-            margin-bottom: 10px;
+            font-size: 1.75em;
+            font-weight: 600;
+            margin-bottom: 8px;
+            color: #ffffff;
         }
 
         .header p {
-            opacity: 0.9;
-            font-size: 1.1em;
+            font-size: 1em;
+            color: #ffffff;
+            opacity: 0.95;
         }
 
         .content {
-            padding: 30px;
-            max-height: 60vh;
+            flex: 1;
+            padding: 24px 20px 140px 20px;
             overflow-y: auto;
+            background-color: #ffffff;
         }
 
         .section {
-            margin-bottom: 40px;
+            margin-bottom: 32px;
         }
 
         .section h2 {
-            color: #667eea;
-            font-size: 1.8em;
-            margin-bottom: 20px;
-            padding-bottom: 10px;
-            border-bottom: 3px solid #667eea;
+            color: #1565c0;
+            font-size: 1.5em;
+            font-weight: 700;
+            margin-bottom: 16px;
+            padding-bottom: 8px;
+            border-bottom: 2px solid #1e88e5;
         }
 
         .section h3 {
-            color: #764ba2;
-            font-size: 1.3em;
+            color: #1a1a1a;
+            font-size: 1.2em;
+            font-weight: 600;
             margin-top: 20px;
-            margin-bottom: 10px;
+            margin-bottom: 12px;
         }
 
         .section p {
-            margin-bottom: 15px;
-            text-align: justify;
+            margin-bottom: 16px;
+            color: #333333;
+            font-size: 0.95em;
         }
 
         .section ul {
-            margin-left: 20px;
-            margin-bottom: 15px;
+            margin-left: 24px;
+            margin-bottom: 16px;
         }
 
         .section li {
-            margin-bottom: 8px;
+            margin-bottom: 10px;
+            color: #333333;
+            font-size: 0.95em;
         }
 
         .section a {
-            color: #667eea;
+            color: #1e88e5;
             text-decoration: none;
             font-weight: 500;
+            border-bottom: 1px solid transparent;
+            transition: border-bottom 0.2s;
         }
 
         .section a:hover {
-            text-decoration: underline;
+            border-bottom: 1px solid #1e88e5;
         }
 
         strong {
-            color: #333;
+            color: #1a1a1a;
             font-weight: 600;
         }
 
         hr {
             border: none;
-            border-top: 2px solid #e0e0e0;
-            margin: 30px 0;
-        }
-
-        .actions {
-            position: sticky;
-            bottom: 0;
-            background: white;
-            padding: 20px 30px;
-            border-top: 2px solid #e0e0e0;
-            display: flex;
-            gap: 15px;
-            justify-content: center;
-        }
-
-        .btn {
-            padding: 15px 40px;
-            font-size: 1.1em;
-            font-weight: 600;
-            border: none;
-            border-radius: 50px;
-            cursor: pointer;
-            transition: all 0.3s ease;
-            text-transform: uppercase;
-            letter-spacing: 1px;
-        }
-
-        .btn-agree {
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            color: white;
-            box-shadow: 0 4px 15px rgba(102, 126, 234, 0.4);
-        }
-
-        .btn-agree:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 6px 20px rgba(102, 126, 234, 0.6);
-        }
-
-        .btn-disagree {
-            background: #f5f5f5;
-            color: #666;
-            border: 2px solid #ddd;
-        }
-
-        .btn-disagree:hover {
-            background: #e0e0e0;
-            border-color: #bbb;
+            border-top: 1px solid #e0e0e0;
+            margin: 40px 0;
         }
 
         .effective-date {
-            background: #f8f9fa;
-            padding: 15px;
-            border-left: 4px solid #667eea;
-            margin: 20px 0;
-            font-style: italic;
-            color: #666;
+            background-color: #e3f2fd;
+            border-left: 4px solid #1e88e5;
+            padding: 12px 16px;
+            margin: 16px 0 24px 0;
+            color: #1565c0;
+            font-weight: 500;
+            font-size: 0.9em;
         }
 
-        /* Scrollbar styling */
+        .footer-note {
+            text-align: center;
+            color: #757575;
+            font-size: 0.85em;
+            padding-top: 16px;
+            border-top: 1px solid #e0e0e0;
+        }
+
+        .footer-note a {
+            color: #1e88e5;
+        }
+
+        .actions {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background: #ffffff;
+            padding: 16px 20px;
+            border-top: 2px solid #e0e0e0;
+            box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.1);
+            display: flex;
+            gap: 12px;
+            justify-content: center;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .btn {
+            padding: 14px 32px;
+            font-size: 1em;
+            font-weight: 600;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+            transition: all 0.2s ease;
+            text-transform: none;
+            min-width: 140px;
+        }
+
+        .btn-agree {
+            background-color: #1e88e5;
+            color: #ffffff;
+            border: 2px solid #1e88e5;
+        }
+
+        .btn-agree:hover {
+            background-color: #1565c0;
+            border-color: #1565c0;
+        }
+
+        .btn-agree:active {
+            background-color: #0d47a1;
+        }
+
+        .btn-disagree {
+            background-color: #ffffff;
+            color: #424242;
+            border: 2px solid #9e9e9e;
+        }
+
+        .btn-disagree:hover {
+            background-color: #f5f5f5;
+            border-color: #757575;
+        }
+
+        .btn-disagree:active {
+            background-color: #eeeeee;
+        }
+
+        /* Scrollbar styling for better readability */
         .content::-webkit-scrollbar {
-            width: 10px;
+            width: 8px;
         }
 
         .content::-webkit-scrollbar-track {
-            background: #f1f1f1;
+            background: #f5f5f5;
         }
 
         .content::-webkit-scrollbar-thumb {
-            background: #667eea;
-            border-radius: 5px;
+            background: #bdbdbd;
+            border-radius: 4px;
         }
 
         .content::-webkit-scrollbar-thumb:hover {
-            background: #764ba2;
+            background: #9e9e9e;
         }
 
         @media (max-width: 768px) {
             .header h1 {
-                font-size: 1.5em;
+                font-size: 1.4em;
             }
 
             .header p {
-                font-size: 1em;
+                font-size: 0.9em;
             }
 
             .content {
-                padding: 20px;
-                max-height: 50vh;
+                padding: 20px 16px 140px 16px;
+            }
+
+            .section h2 {
+                font-size: 1.3em;
+            }
+
+            .section h3 {
+                font-size: 1.1em;
             }
 
             .actions {
                 flex-direction: column;
+                padding: 12px 16px;
             }
 
             .btn {
                 width: 100%;
+                min-width: auto;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .header {
+                padding: 20px 16px;
+            }
+
+            .section p,
+            .section li {
+                font-size: 0.9em;
             }
         }
     </style>
@@ -207,7 +264,7 @@
 <body>
     <div class="container">
         <div class="header">
-            <h1>🌙 Privacy Policy & Terms</h1>
+            <h1>Privacy Policy & Terms of Service</h1>
             <p>Ramadan - Prayer Times & Calendar</p>
         </div>
 
@@ -267,7 +324,7 @@
                     Service Provider provides physical, electronic, and procedural safeguards to protect information the
                     Service Provider processes and maintains.</p>
 
-                <h3>Changes</h3>
+                <h3>Changes to Privacy Policy</h3>
                 <p>This Privacy Policy may be updated from time to time for any reason. The Service Provider will notify
                     you of any changes to the Privacy Policy by updating this page with the new Privacy Policy. You are
                     advised to consult this Privacy Policy regularly for any changes, as continued use is deemed
@@ -338,7 +395,19 @@
                     provider for data usage during the connection to the application, or other third-party charges. By
                     using the application, you accept responsibility for any such charges, including roaming data
                     charges if you use the application outside of your home territory (i.e., region or country) without
-                    disabling data roaming.</p>
+                    disabling data roaming. If you are not the bill payer for the device on which you are using the
+                    application, they assume that you have obtained permission from the bill payer.</p>
+
+                <p>Similarly, the Service Provider cannot always assume responsibility for your usage of the
+                    application. For instance, it is your responsibility to ensure that your device remains charged. If
+                    your device runs out of battery and you are unable to access the Service, the Service Provider
+                    cannot be held responsible.</p>
+
+                <p>In terms of the Service Provider's responsibility for your use of the application, it is important to
+                    note that while they strive to ensure that it is updated and accurate at all times, they do rely on
+                    third parties to provide information to them so that they can make it available to you. The Service
+                    Provider accepts no liability for any loss, direct or indirect, that you experience as a result of
+                    relying entirely on this functionality of the application.</p>
 
                 <h3>Application Updates</h3>
                 <p>The Service Provider may wish to update the application at some point. The application is currently
@@ -360,15 +429,15 @@
                     to review this page regularly for any changes. The Service Provider will notify you of any changes
                     by posting the new Terms and Conditions on this page.</p>
 
-                <h3>Contact Us</h3>
+                <h3>Contact Information</h3>
                 <p>If you have any questions or suggestions about the Privacy Policy or Terms and Conditions, please do
                     not hesitate to contact the Service Provider at <a
                         href="mailto:relatableaf99i@gmail.com">relatableaf99i@gmail.com</a>.</p>
 
-                <hr>
-                <p style="text-align: center; color: #999; font-size: 0.9em;">This page was generated by <a
-                        href="https://app-privacy-policy-generator.nisrulz.com/" target="_blank"
-                        rel="noopener noreferrer">App Privacy Policy Generator</a></p>
+                <div class="footer-note">
+                    <p>This page was generated by <a href="https://app-privacy-policy-generator.nisrulz.com/"
+                            target="_blank" rel="noopener noreferrer">App Privacy Policy Generator</a></p>
+                </div>
             </div>
         </div>
 
@@ -380,26 +449,15 @@
 
     <script>
         function handleAgree() {
-            // This can be customized based on your needs
-            // For example, you could:
-            // - Close the webview
-            // - Send a message to the React Native app
-            // - Redirect to another page
-            // - Store acceptance in localStorage
-
-            alert('Thank you for accepting our Privacy Policy and Terms & Conditions!');
-
-            // Example: If used in a WebView, you can post a message to React Native
+            // Send message to React Native WebView
             if (window.ReactNativeWebView) {
                 window.ReactNativeWebView.postMessage(JSON.stringify({ action: 'agree' }));
+            } else {
+                alert('Thank you for accepting our Privacy Policy and Terms & Conditions!');
             }
-
-            // Or redirect to a success page
-            // window.location.href = 'success.html';
         }
 
         function handleDisagree() {
-            // Handle disagreement
             const confirmed = confirm('You must agree to the Privacy Policy and Terms & Conditions to use this app. Are you sure you want to disagree?');
 
             if (confirmed) {
@@ -407,7 +465,6 @@
                     window.ReactNativeWebView.postMessage(JSON.stringify({ action: 'disagree' }));
                 } else {
                     alert('You have declined the Privacy Policy and Terms & Conditions.');
-                    // You could redirect or close the window
                 }
             }
         }
